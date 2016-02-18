@@ -3,6 +3,11 @@ extends layout
 block content
   h1= food
   script(type='text/javascript', src='textMessenger.js')
-  p Online Text Messenger
-  p Please enter the recipient's phone number
-  p Please enter the desired message
+  form(action='demo_form.asp')
+     | First name:
+     input(type='text', name='fname')
+     br
+     |   Last name:
+     input(type='text', name='lname')
+     br
+     input(type='submit', value='Submit')
