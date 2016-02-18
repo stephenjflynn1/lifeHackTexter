@@ -1,13 +1,13 @@
 extends layout
 
 block content
-  h1= food
+  h1= online text messenger
   script(type='text/javascript', src='textMessenger.js')
-  form(action='demo_form.asp')
-     | First name:
-     input(type='text', name='fname')
+  form(action='demo_form.asp' id='textInfo')
+     | Phone Number:
+     input(type='text', name='phoneNumber' id='recipientNumber')
      <br />
-     |   Last name:
-     input(type='text', name='lname')
+     |   Desired Message:
+     input(type='text', name='content' id = 'messageContent')
      <br />
      input(type='submit', value='Submit')
