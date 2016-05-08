@@ -3,13 +3,16 @@ extends layout
 block content
 
 
-  h1 Life Hack Texter
-  form(id='textInfo')
-     | Phone Number:
-     input(type='number', name='phoneNumber' id='recipientNumber' max-length="11")
-     <br />
-     | Desired Message:
-     input(type='text', name='content' id='messageContent')
-     <br />
-     input(type='submit', value='Submit')
-     div(style="color: red" id="errorContainer")
+h1 Life Hack Texter
+body
+    title Life Hack Texter
+
+    form(id='textInfo')
+         | Phone Number:
+         input(type='number', name='phoneNumber' id='recipientNumber' max-length="11")
+         <br />
+         | Desired Message:
+         input(type='text', name='content' id='messageContent')
+         <br />
+         input(type='submit', value='Submit')
+         div(style="color: red" id="errorContainer")
